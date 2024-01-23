@@ -1,5 +1,5 @@
 // package Inheritance;
-class Human{
+class Human{// Parent class || Super Class 
     int age;
     void sleep(){
         age=18;
@@ -8,7 +8,7 @@ class Human{
 
     }
 }
-class Student extends Human{
+class Student extends Human{ // Child class || sub class
 
 }
 public class Inheritance1 {
