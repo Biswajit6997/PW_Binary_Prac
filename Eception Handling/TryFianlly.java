@@ -17,8 +17,6 @@ public class TryFianlly {
 
 
 
-
-
         // try with finally
         /*Scanner sc = new Scanner(System.in);
         try {
