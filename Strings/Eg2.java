@@ -7,5 +7,6 @@ public class Eg2 {
         System.out.println(s1==s2);
         System.out.println(s2.equals(s3));//true
         System.out.println(s3.equals(s4));//false
+        System.out.println(s2.equalsIgnoreCase(s4));//true
     }
 }
