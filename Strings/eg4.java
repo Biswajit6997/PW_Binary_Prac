@@ -11,5 +11,7 @@ public class eg4 {
         System.out.println(str.indexOf("S"));//3
         System.out.println(str.indexOf("a"));//11
         System.out.println(str.lastIndexOf("a"));//13
+        // System.out.println(str.ch);//13
+        
     }
 }
