@@ -1,3 +1,6 @@
+
+// video 216
+// ?ArrayList
 import java.util.ArrayList;
 
 public class arraylisteg {
