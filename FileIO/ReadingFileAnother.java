@@ -16,7 +16,7 @@ public class ReadingFileAnother {
 
         FileReader fr=new FileReader(file);// read the file
 
-        char ch[]=new char[(int)file.length()];// we store the data into an array
+        char ch[]=new char[(int)file.length()];// typecast we store the data into an array
 
         fr.read(ch);//read the data
         for(char data:ch){
