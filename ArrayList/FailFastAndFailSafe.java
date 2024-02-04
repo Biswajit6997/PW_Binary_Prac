@@ -19,7 +19,7 @@ public class FailFastAndFailSafe {
             // al.add(100);
 
         }
-// fail Test
+// fail Safe
         CopyOnWriteArrayList alt=new CopyOnWriteArrayList<>();
         alt.add(10);
         alt.add(20);
@@ -29,7 +29,7 @@ public class FailFastAndFailSafe {
         Iterator it1=alt.iterator();
         while (it1.hasNext()) {
             System.out.println(it1.next());
-            alt.add(100);//here we cannot add 100 but run with any fail test
+            alt.add(100);//here we cannot add 100 but run with any fail safe
             
         }
 
