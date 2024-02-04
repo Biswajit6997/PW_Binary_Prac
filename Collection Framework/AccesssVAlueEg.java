@@ -10,7 +10,7 @@ public class AccesssVAlueEg {
         map.put(3, "Rahul");
         map.put(4, "Ramesh");
 
-        System.out.println(map);
+        System.out.println(map); 
 
         System.out.println(map.get(4));// Ramesh
 
