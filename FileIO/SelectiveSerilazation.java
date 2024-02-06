@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 class Crickter implements Serializable{
     String name;
-    transient int age;// we use" transient" keyword to not tomparrticaipate in deserilazation
+    transient int age;// we use" transient" keyword to not to parrticaipate in deserilazation
     int runs;
 
     public Crickter(String name,int age,int runs){

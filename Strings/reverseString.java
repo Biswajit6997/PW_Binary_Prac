@@ -22,6 +22,7 @@ public class reverseString {
         String str1 = sc.nextLine();
         // String str1="pwskills";
         System.out.println("Reverse of the String is:" + reverse(str1));
+        System.out.println();
 
     }
 
