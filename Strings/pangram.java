@@ -5,7 +5,7 @@ public class pangram {
     public static void main(String[] args) 
     {
        boolean flag=false;
-        String str="THE QUICK BROWN FOX JUMPS OVER LAZY DOG";
+        String str="THE QUICK  BROW FOX JUMPS OVER LAZY DOG";
         // str=str.toLowerCase();
         str=str.replace(" ", "");
         char []ch=str.toCharArray();
