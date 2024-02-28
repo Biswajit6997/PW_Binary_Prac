@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AnnonomusArray",
+            "request": "launch",
+            "mainClass": "AnnonomusArray",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "ArrayException",
+            "request": "launch",
+            "mainClass": "ArrayException",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "EnhancedFor",
+            "request": "launch",
+            "mainClass": "EnhancedFor",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "EnhancedForLoop",
+            "request": "launch",
+            "mainClass": "EnhancedForLoop",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "PrefixSumBrute",
+            "request": "launch",
+            "mainClass": "PrefixSumBrute",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "PrefixSumOptimized",
+            "request": "launch",
+            "mainClass": "PrefixSumOptimized",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "Rotationof2Dmatrix",
+            "request": "launch",
+            "mainClass": "Rotationof2Dmatrix",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "SearchElement2Darray",
+            "request": "launch",
+            "mainClass": "SearchElement2Darray",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "eg1",
+            "request": "launch",
+            "mainClass": "eg1",
+            "projectName": "2D Array_f5b7a47c"
+        },
+        {
+            "type": "java",
+            "name": "length",
+            "request": "launch",
+            "mainClass": "length",
+            "projectName": "2D Array_f5b7a47c"
+        }
+    ]
+}
