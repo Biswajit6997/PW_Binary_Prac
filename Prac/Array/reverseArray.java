@@ -1,3 +1,4 @@
+package Array;
 public class reverseArray {
     public static void rev(int arr[]){
         int n=arr.length;
