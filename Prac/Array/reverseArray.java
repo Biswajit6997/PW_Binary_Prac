@@ -2,7 +2,7 @@
 public class reverseArray {
     public static void rev(int arr[]){
         int n=arr.length;
-        //swap betwwen arr[i]and arr[in-i-1]
+        //swap betwwen arr[i]and arr[n-i-1]
         for(int i=0;i<n/2;i++){
             int temp=arr[i];
             arr[i]=arr[n-i-1];
