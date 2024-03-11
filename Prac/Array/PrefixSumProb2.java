@@ -1,0 +1,42 @@
+
+//Quary Sum approach
+// pw 
+
+import java.util.Scanner;
+
+public class PrefixSumProb2 {
+// Prefix sum approach
+    static int[] makeprefixsuum(int arr[]){
+        for(int i=1;i<arr.length;i++){
+            arr[i]+=arr[i-1];
+        }
+        return arr;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array Size:");
+        int n = sc.nextInt();
+        int arr[] = new int[n+1];
+        System.out.print("Enter " + n + " Elements");
+
+        for (int i = 1; i <=n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int preSum[]=makeprefixsuum(arr);
+
+        System.out.println("Enter the num of quaries:");
+        int q=sc.nextInt();
+
+
+        while (q-- >0) {
+            System.out.println("Enter range:");
+            int l=sc.nextInt();
+            int r=sc.nextInt();
+            int ans=preSum[r]-preSum[l-1];
+            System.out.println("Sum is"+ans);
+
+            
+        }
+    }
+}

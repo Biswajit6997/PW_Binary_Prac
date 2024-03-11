@@ -1,6 +1,6 @@
 
 import java.util.Arrays;
-public class K_SumPairs {
+public class K_SumPairs{
     public int maxOperations(int[] nums, int k) {
         Arrays.sort(nums);
         int left = 0;
