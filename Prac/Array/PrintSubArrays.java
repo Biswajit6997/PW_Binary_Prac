@@ -9,7 +9,7 @@ public class PrintSubArrays {
                 count++;//for count subarrays
                 System.out.println();
             }
-            System.out.println();
+            System.out.println(); 
         }
         //for count subarrays
         System.out.println("Total subarray is :"+count);
