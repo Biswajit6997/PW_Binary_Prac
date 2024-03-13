@@ -16,7 +16,7 @@ public class EqualSumpartition {
     }
 
     static boolean equalSumPartation(int arr[]){
-        int totalsum=findArraySum(arr);
+        int totalsum=findArraySum                                          (arr);
         int prefixSum=0;
         for(int i=0;i<arr.length;i++){
             prefixSum+=arr[i];
@@ -38,8 +38,7 @@ public class EqualSumpartition {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
+        // int arr[]={1,1,1,1,1,1};
         System.out.println("Parttaion are possible:"+equalSumPartation(arr));
-
-
     }
 }
