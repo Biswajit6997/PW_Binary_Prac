@@ -7,10 +7,44 @@ public class sortanarray {
     static void printarray(int arr[]) {
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
+        System.out.println();
 
     }
+    static void swap(int arr[],int i,int j){
+       int temp=arr[i];
+       arr[i]=arr[j];
+       arr[j]=temp;
+    }
+
+  
+// 2nd approach
+
+    static void sortZeroesAndOnes(int[] arr){
+        int n = arr.length;
+
+        int left = 0, right = n-1;
+       
+        while(left < right){
+            if(arr[left] == 1 && arr[right] == 0){
+                swap(arr, left, right);
+                left++;
+                right--;
+            }
+
+            if(arr[left] == 0){
+                left++;
+            }
+
+            if(arr[right] == 1){
+                right--;
+            }
+        }
+    }
+
+    
+    //1st approach
 
     static void sortZerosAndOnce(int arr[]) 
      {
@@ -34,17 +68,23 @@ public class sortanarray {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array ::");
+        System.out.print("Enter array size ");
         int n = sc.nextInt();
-        int arr[] = new int[n];
-        System.out.println(" Enter " + n + " Element");
-        for (int i = 0; i < n; i++) {
+        int[] arr = new int[n];
+
+        System.out.println("Enter " + n + " elements");
+        for(int i = 0; i < n; i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println("Orginal Array is: ");
+
+        System.out.println("Original array: ");
         printarray(arr);
-        sortZerosAndOnce(arr);
-        System.out.println("Sorted array is:");
+        // int[] ans = sortSquares(arr);
+//        sortArrayByParity(arr);
+       sortZeroesAndOnes(arr);
+        System.out.println("Sorted array: ");
+        // printArray(ans);
         printarray(arr);
     }
 }
+
