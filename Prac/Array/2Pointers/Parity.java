@@ -7,6 +7,7 @@
 import java.util.Scanner;
 
 public class Parity {
+//print the array
 
     static void printarray(int arr[]) {
 
@@ -16,12 +17,14 @@ public class Parity {
         System.out.println();
 
     }
-    static void swap(int arr[],int i,int j){
+    //swap the array
+    static void swap(int arr[],int i,int j)
+    {
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-
+//main parity method
     static void sortByparity(int arr[]) {
         int n=arr.length;
         int left=0,right=n-1;
