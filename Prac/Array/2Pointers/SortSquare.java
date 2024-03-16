@@ -1,8 +1,17 @@
+
+//i:p:1,2,3,4,5,6
+// o/p: 1,4,9,16,25,36
+
+
+// i/p:-10 -3 -2 1 4 5
+//o/p : 1  4 9  16 25 100
+
+
 import java.util.Scanner;
 
 public class SortSquare {
 
-
+//SortSquare methods
     static int[] sortSuare(int arr[]){
         int n=arr.length;
         int left=0;
@@ -11,7 +20,9 @@ public class SortSquare {
         int k=0;
         while (left<=right) {
             if(Math.abs(arr[left])>Math.abs(arr[right])){
-                ans[k++]=arr[left]*arr[left];
+                ans[k++]=arr[left]*arr[left]; //Or   ans[k]=arr[left]*arr[left]
+                                              //     k++ 
+
                 left++;
 
             }
@@ -43,9 +54,9 @@ public class SortSquare {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the size of the array");;
+        System.out.print("Enter the size of the array :");;
         int n=sc.nextInt();
-        System.out.println("Enter "+n +"Element");
+        System.out.print("Enter "+n +" Element :");
         int arr[]=new int[n];
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
