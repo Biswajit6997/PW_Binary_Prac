@@ -11,7 +11,7 @@ public class MatrixMultiplaction {
             }
         System.out.println();
        }
-   }
+   } 
 
    static void multiply(int[][] a, int r1, int c1, int[][] b, int r2, int c2){
     if(c1 != r2){
