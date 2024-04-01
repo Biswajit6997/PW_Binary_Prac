@@ -1,4 +1,8 @@
-public class duplicate {
+// package Array.2Pointers;
+
+public class findduplicate {
+    
+
     public static void main(String[] args) {
         int arr[]={1,2,2,4,5,4,5};
         int n=arr.length;
