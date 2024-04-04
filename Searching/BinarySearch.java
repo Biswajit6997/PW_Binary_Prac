@@ -19,7 +19,7 @@ public class BinarySearch {
         }
         return -1;
     }
-    // 2nd approach
+    // 2nd approach by recursion by pw
 
     static boolean recBinarySearch(int[] a, int st, int end, int target){
         if(st > end) return false; // base case
@@ -35,20 +35,20 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 5, 6, 8, 9 };
-        int target = 0;
-        // int result = binary(arr, target);
-        // if (result == -1) {
-        // System.out.println("Element not present in the array");
-        // } else {
-        // System.out.println("Element present at idx" + result);
-        // }
-
-        while(target != 10) {
-            System.out.printf("%d exists in arr: %b \n", target, recBinarySearch(arr, 0, arr.length-1, target));
-
-
-            target++;
+        int target = 5;
+        int result = binary(arr, target);
+        if (result == -1) {
+        System.out.println("Element not present in the array");
+        } else {
+        System.out.println("Element present at idx" + result);
         }
+
+        // while(target != 10) {
+        //     System.out.printf("%d exists in arr: %b \n", target, recBinarySearch(arr, 0, arr.length-1, target));
+
+
+        //     target++;
+        // }
 
     }
 }
