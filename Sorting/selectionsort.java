@@ -12,11 +12,12 @@ public class selectionsort {
                 }
 
             }
+            //swap 
             int temp = arr[i];
             arr[i] = arr[minPos];
             arr[minPos] = temp;
         }
-    }
+   }
 
     public static void main(String[] args) {
         int arr[] = { 20, 50, 13, 18, 25 };
