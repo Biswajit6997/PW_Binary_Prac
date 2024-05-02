@@ -1,8 +1,8 @@
 // i/p:12345
 // o/p:15
 
-// T(n)=
-// Space =O(                                       )
+// T(n)=O(lon n)
+// Space =O(logn)
 
 public class SumOfDigit {
     static int sum(int num){
