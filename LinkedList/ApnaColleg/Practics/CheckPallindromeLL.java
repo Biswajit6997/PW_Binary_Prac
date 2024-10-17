@@ -32,13 +32,66 @@ public class CheckPallindromeLL {
         System.out.println("null");
     }
 
+    // Pallindrome Logic
+
+    // Find mid --> Slow fast Approach
+    public Node findMid(Node head){
+        Node slow=head;
+        Node fast=head;
+        while (fast!=null && fast.next!=null ) {
+            slow=slow.next;//+1
+            fast=fast.next.next;//+2
+            
+        }
+        return slow;//Slow is my MidNode
+
+    }
+    public boolean checkPallindrome(){
+        if(head==null|| head.next==null){
+
+            return true;
+        }
+        // Find Middle
+        Node mid=findMid(head);
+        
+        // Reverse 2nd Half
+
+        Node curr=mid;
+        Node prev=null;
+        while (curr!=null) {
+            Node next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            
+        }
+        Node right=prev;
+        Node left=head;
+        // Check if equal
+        while (right!=null) {
+            if (left.data!=right.data) {
+                return false;
+                
+            }
+            left=left.next;
+            right=right.next;
+        }
+        return true;
+        
+    }
+
+
+
     public static void main(String[] args) {
         CheckPallindromeLL ll=new CheckPallindromeLL();
-        ll.addFirst(4);
-        ll.addFirst(3);
+        ll.addFirst(1);
+        ll.addFirst(2);
         ll.addFirst(2);
         ll.addFirst(1);
+
+        // 
         ll.PrintLL();
+        System.out.println(ll.checkPallindrome());
 
     }
 }
