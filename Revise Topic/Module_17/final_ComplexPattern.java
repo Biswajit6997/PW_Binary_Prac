@@ -1,6 +1,5 @@
 package Module_17;
-
-/*
+/* 
  
 
 *******************
@@ -22,7 +21,9 @@ package Module_17;
 * *    *   *    * *
 **      * *      **
 *******************
- */
+
+*/
+
 
 public class final_ComplexPattern {
     public static void main(String[] args) {
