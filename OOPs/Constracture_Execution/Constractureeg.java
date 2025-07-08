@@ -22,14 +22,14 @@ class Demo2 extends Demo1 {
     int x, y;
     // constructure
     public Demo2() {
-        // super(5,10);
-        this(3, 5);
+        super(3, 5);
         System.out.println("Calling Child Constacture");
-
+        
     }
     // constructure with parameter
-
+    
     public Demo2(int a, int b) {
+        this();
         System.out.println("Callimg Child With paramertized constructure");
         a = x;
         b = y;
@@ -39,6 +39,7 @@ class Demo2 extends Demo1 {
 public class Constractureeg {
     public static void main(String[] args) {
         Demo2 d = new Demo2();
+
     }
 
 }

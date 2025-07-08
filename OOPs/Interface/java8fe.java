@@ -1,7 +1,9 @@
 // Java 8 Features 
 interface A{
     public void show();
+    
     // Default method in interface
+
     default void config(){
         System.out.println("From config");
     }
@@ -19,7 +21,7 @@ class B implements A{
 }
 public class java8fe {
     public static void main(String[] args) {
-        A.abc();// We can acess directly if the method is static
+        A.abc();  // We can acess directly if the method is static
         B obj=new B();
         obj.config();
         obj.show();
